@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Agro Management System</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login-btn">Sign Up</a></li>
+             </ul>
+             </nav> 
+             </header>
+        <main class="container">
+         <div class="banner">
+            <img src="./images-02/oo.jpg" alt="wheats">
+          </div>
+
+    <div class="signup-form">
+        <h2>Login To AMS</h2>
+    
+        <form action="welcome_get.php" method="GET">
+          <div class="form-group">
+            <label for="FullName">Full Name</label><br>
+             <input type="text" id="FullName"  placeholder="Enter Your Full Name">
+        </div><br>
+        <div class="form-group">
+            <label for="email">Email</label><br>
+            <input type="email" id="Email"  placeholder="Enter Your Email">
+       </div><br>
+       <div class="form-group">
+        <label for="password">Password</label><br>
+        <input type="password" id="Password" placeholder="Create a Password">
+        <p class="text"><a href="#">Forgot password?</a></p>
+   </div><br>
+    <button type="submit" class="signup-btn">Login</button>
+        </form>
+       <p class="login-link"> <a href="#"> Don't have an acount? Sign up</a></p>
+</div>
+
+    </main>
+    
+    
+
+</body>
+</html>
