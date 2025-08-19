@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>AMS</h1>
+        <ul class="nav-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Resources</a></li>
+            
+        </ul>
+        
+  
+    </nav>
+        
+
+        
+    <div class="form-container" >
+        
+      <h1>List your products</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name"placeholder="e.g., organic Tomatoes">
+
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea  id="description" name="description" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price"
+                placeholder="e.g.,25CFA/FRUIT">
+
+            </div>
+            <div class="form-group">
+                <label for="quantityQuantity"></label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 500 FRUITS">
+
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select  id="category" name="category">
+                    <option value="" disabled selected>select</option>
+                    <option value="fruits">fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="grains">Grains</option>
+                    <option value="dairy">Dairy</option>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="product-images">Product Images</label> 
+                <input type="file" name="">
+                <div class="upload-area" id="upload-area">
+                    <p>Drag and drop or click to upload images of your prodduct</p>
+                    <button type="button" class="upload-btn" onclick="document.grtElementById('file-input').click()">upload</button>
+                    <input type="file" id="file-input" class="hidden-input"multiple>
+
+                </div>
+                
+
+            </div>
+            <div class="form-group 
+            submit-group">
+            <button type="submit" class="submit-btn">submit</button>
+                 
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

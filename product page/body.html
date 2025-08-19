@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mini Badge Generator</h2>
+    <label for="firstName"></label>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter first name">
+
+    <label for="SecondName">Second Name</label>
+    <input type="text" name="SecondName" id="secondName" placeholder="Enter second firstName">
+    <Button class="txt" id="generateBtn">Generate Logo</Button>
+    <div id="badge"></div>
+</body>
+<script src="responsive.js"></script>
+<script>
+    const firstNameInput =document.getElementById("firstName");
+    const secondNameInput =document.getElementById("secondName");
+    const badgeDiv=document.getElementById("badge");
+     const GenerateBtn =document.getElementById("generateBtn");
+
+     function generateBadge(){
+        const first = firstNameInput.value.trim();
+        const second = secondNameInput.value.trim();
+
+     if (!first || !second){
+        badgeDiv.style.display = "block";
+        badgeDiv.textContent = "please All fields REquired";
+        badgeDiv.style.backgroundColor = "#ffd9d9";
+     }
+     badgeDiv.style.display = "block";
+        badgeDiv.style.backgroundColor = "#d9d9ff";
+        badgeDiv.textContent = `Hello my brand is ${first} ${second}`;
+
+    }
+    generateBtn.addEventListener(`click`,generateBadge)
+</script>
+</html>
